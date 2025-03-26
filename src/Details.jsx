@@ -82,17 +82,21 @@ function Details() {
 				</div>
 
 				<div className="border-t border-[#505051] mt-7 mb-6"></div>
-				<div className="flex justify-between gap-10 px-4 sm:px-6">
-					<p className="text-[#D2D5DA] font-semibold">Subregion</p>
-					<p className="text-[#D2D5DA] font-semibold">
+				<div className="flex justify-between gap-15 sm:gap-25 md:gap-35 px-4 sm:px-6">
+					<p className="text-[#D2D5DA] font-semibold whitespace-nowrap">
+						Subregion
+					</p>
+					<p className="text-[#D2D5DA] font-semibold  flex-1 text-right break-words">
 						{selectedCountry.subregion || "Not Available"}
 					</p>
 				</div>
 
 				<div className="border-t border-[#505051] mt-7 mb-6"></div>
-				<div className="flex justify-between gap-35 px-4 sm:px-6">
-					<p className="text-[#D2D5DA] font-semibold">Language(s)</p>
-					<p className="text-[#D2D5DA] font-semibold">
+				<div className="flex justify-between gap-15 sm:gap-25 md:gap-35 px-4 sm:px-6">
+					<p className="text-[#D2D5DA] font-semibold whitespace-nowrap">
+						Language(s)
+					</p>
+					<p className="text-[#D2D5DA] font-semibold flex-1 text-right break-words">
 						{selectedCountry.languages
 							? Object.values(selectedCountry.languages).join(", ")
 							: "None"}
@@ -100,9 +104,11 @@ function Details() {
 				</div>
 
 				<div className="border-t border-[#505051] mt-7 mb-6"></div>
-				<div className="flex justify-between gap-10 px-4 sm:px-6">
-					<p className="text-[#D2D5DA] font-semibold">Currencies</p>
-					<p className="text-[#D2D5DA] font-semibold">
+				<div className="flex justify-between gap-15 sm:gap-25 md:gap-35 px-4 sm:px-6">
+					<p className="text-[#D2D5DA] font-semibold whitespace-nowrap">
+						Currencies
+					</p>
+					<p className="text-[#D2D5DA] font-semibold  flex-1 text-right break-words">
 						{selectedCountry.currencies
 							? Object.values(selectedCountry.currencies)
 									.map((c) => c.name)
